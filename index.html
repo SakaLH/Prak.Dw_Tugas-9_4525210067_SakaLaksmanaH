@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selaras Coffee - UMKM Company Profile</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR RESPONSIF -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-warning">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="#">SELARAS<span class="text-white">.COFFEE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header id="hero" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Harmoni Rasa di Setiap <span class="text-warning">Cangkir</span></h1>
+            <p class="lead mb-4 text-light">Menghadirkan biji kopi pilihan nusantara dengan racikan selaras dan suasana
+                yang tenang.</p>
+            <a href="#produk" class="btn btn-warning btn-lg fw-semibold px-4 me-2">Lihat Menu</a>
+            <button type="button" class="btn btn-outline-warning btn-lg px-4" data-bs-toggle="modal"
+                data-bs-target="#modalPromo">
+                Info Promo
+            </button>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <!-- 4. ALERT NOTIFIKASI PROMO -->
+        <section id="promo" class="mb-5">
+            <div class="alert alert-warning alert-dismissible fade show border-start border-4 border-dark shadow-sm"
+                role="alert">
+                <strong>Promo Pelajar & Mitra!</strong> Dapatkan diskon 20% untuk semua varian kopi susu dengan
+                menunjukkan kartu identitas.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </section>
+
+        <!-- 3. MINIMAL 3 CARD (MENU / PRODUK) -->
+        <section id="produk" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold section-title">Menu Favorit Kami</h2>
+                <p class="text-muted">Pilihan menu terlaris yang diracik khusus untuk pecinta kopi.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/image.png" class="card-img-top custom-card-img" alt="Kopi Susu Selaras">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Kopi Susu Selaras</h5>
+                            <p class="card-text text-muted flex-grow-1">Perpaduan espresso arabika, susu segar, dan gula
+                                aren organik khas racikan lokal.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">Rp 18.000</span>
+                                <button class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalPromo">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/image copy.png" class="card-img-top custom-card-img" alt="Kopi Susu Selaras">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Manual Brew V60</h5>
+                            <p class="card-text text-muted flex-grow-1">Seduhan manual single origin dengan rasa floral
+                                dan acidity bersih menyegarkan.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">Rp 22.000</span>
+                                <button class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalPromo">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="images/image copy 2.png" class="card-img-top custom-card-img" alt="Kopi Susu Selaras">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Cold Brew Lemonade</h5>
+                            <p class="card-text text-muted flex-grow-1">Ekstraksi dingin selama 16 jam dipadu sentuhan
+                                lemon untuk kesegaran maksimal.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-warning">Rp 24.000</span>
+                                <button class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#modalPromo">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FORM KONTAK -->
+        <section id="kontak" class="py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 bg-light">
+                        <h3 class="fw-bold text-center mb-3">Hubungi & Kunjungi Kami</h3>
+                        <p class="text-center text-muted mb-4">Ingin bermitra atau memesan katering kopi? Kirim pesan
+                            melalui formulir berikut.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label fw-semibold">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Alamat Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="nama@email.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label fw-semibold">Pesan atau Pertanyaan</label>
+                                <textarea class="form-control" id="pesan" rows="4" placeholder="Tuliskan pesan Anda..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning fw-bold w-100 text-dark">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. MODAL DETAIL / PROMO -->
+    <div class="modal fade" id="modalPromo" tabindex="-1" aria-labelledby="modalPromoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-warning">
+                <div class="modal-header bg-dark text-warning">
+                    <h5 class="modal-title fw-bold" id="modalPromoLabel">Informasi Kemitraan & Promo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Selamat datang di program loyalitas <strong>Selaras Coffee</strong>!</p>
+                    <ul class="mb-3">
+                        <li>Diskon 20% berlaku setiap hari Senin–Jumat pukul 13.00–17.00.</li>
+                        <li>Dapatkan free cup ke-10 dengan mengumpulkan stamp pembelian.</li>
+                        <li>Paket kemitraan / bulk order untuk event kantor mulai dari 50 cup.</li>
+                    </ul>
+                    <p class="small text-muted mb-0">*Syarat dan ketentuan berlaku di seluruh gerai Selaras Coffee.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#kontak" class="btn btn-warning fw-semibold" data-bs-dismiss="modal">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-dark text-light py-4 border-top border-warning">
+        <div class="container text-center">
+            <p class="mb-1 fw-bold text-warning">Selaras Coffee &copy; 2026</p>
+            <p class="small text-secondary mb-0">Website Company Profile UMKM — Dibuat menggunakan Bootstrap 5</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (Termasuk Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
